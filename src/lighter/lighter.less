@@ -1,0 +1,38 @@
+@size-of-light: 80px;
+@default-bg: whitesmoke;
+
+
+.lighter {
+  width: 90px;
+  &_light {
+    border-radius: 50%;
+    width: @size-of-light;
+    height: @size-of-light;
+    background: @default-bg;
+    margin: 1rem auto;
+    transition: all 500ms;
+  }
+  &_switcher {
+    width: 100%;
+    display: block;
+    padding: 0.5rem 0;
+    border: none;
+    background: @default-bg;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: all 500ms;
+  }
+  &_toggle {
+    .lighter_light {
+      background: magenta;
+    }
+    //.lighter_light:nth-child(2n) {
+    //  background: yellow;
+    //}
+    //.lighter_light:nth-child(3n) {
+    //  background: aqua;
+    //}
+  }
+}

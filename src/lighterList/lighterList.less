@@ -1,0 +1,39 @@
+.lighters {
+  border: 1px solid red;
+  display: flex;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    flex: 1 1 80%;
+  }
+  &__btns {
+    width: 20%;
+    flex: 1 1 20%;
+  }
+  &__btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border: none;
+    background: #cdcdcd;
+    &_add {
+      background-color: #2fcc70;
+      color: #fff;
+    }
+    &_remove {
+      background-color: darkred;
+      color: #fff;
+    }
+    &_toggle {
+      background-color: #3498db;
+      color: #fff;
+    }
+    &_auto {
+      background-color: yellow;
+      color: #000;
+    }
+  }
+}
